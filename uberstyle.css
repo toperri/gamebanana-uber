@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins", Arial;
+}
+@keyframes moduleAnim {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+module .Content {
+    background-color: rgba(0,0,0,0.2);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 25px !important;
+    animation: 2s moduleAnim ease-out;
+    transition: 0.3s scale;
+}
+module .Content:hover {
+    scale: 1.05;
+    z-index: 100000;
+}
+
+#SubNavigator div {
+    display: none;
+}
+
+#SecondaryNav {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#PrimaryNav {
+    border-bottom-left-radius: 20px;
+}
+
+.AvatarImage {
+    border-radius: 3px;
+    transition: 0.3s scale;
+}
+
+.AvatarImage:hover {
+    scale: 1.05;
+}
+
+#SubNavigator {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+@keyframes bganim {
+    0% {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+        background-position-y: -1000px;
+    }
+}
+
+body {
+    background: #321b1d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    animation-name: bganim;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-attachment: fixed;
+}

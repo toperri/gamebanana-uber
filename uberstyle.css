@@ -7,12 +7,10 @@
     0% {
         transform: scale(0.9);
         opacity: 0;
-        height: 0;
     }
     100% {
         transform: scale(1);
         opacity: 1;
-        height: auto;
     }
 }
 module .Content {

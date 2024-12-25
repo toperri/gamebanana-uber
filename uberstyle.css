@@ -6,9 +6,13 @@
 @keyframes moduleAnim {
     0% {
         transform: scale(0.9);
+        opacity: 0;
+        height: 0;
     }
     100% {
         transform: scale(1);
+        opacity: 1;
+        height: auto;
     }
 }
 module .Content {
@@ -16,7 +20,7 @@ module .Content {
     margin: 10px;
     border-radius: 10px;
     padding: 25px !important;
-    animation: 2s moduleAnim ease-out;
+    animation: 0.9s moduleAnim ease-out;
     transition: 0.3s scale;
 }
 module .Content:hover {

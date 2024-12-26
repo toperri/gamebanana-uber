@@ -66,6 +66,7 @@ module .Content:hover {
 
 body {
     background: #321b1d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    background-size: 15px !important;
     animation-name: bganim;
     animation-duration: 60s;
     animation-iteration-count: infinite;

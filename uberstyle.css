@@ -13,8 +13,9 @@
         opacity: 1;
     }
 }
+
 module .Content {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     margin: 10px;
     border-radius: 10px;
     padding: 25px !important;
@@ -48,6 +49,25 @@ module .Content:hover {
     scale: 1.05;
 }
 
+@keyframes bganim2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+
+#MainContent {
+    background-attachment: fixed;
+    animation-name: bganim2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-attachment: fixed;
+}
+
 #SubNavigator {
     display: flex !important;
     justify-content: center !important;
@@ -59,16 +79,15 @@ module .Content:hover {
         background-position-y: 0;
     }
     100% {
-        background-position-x: -1000px;
-        background-position-y: -1000px;
+        background-position-x: -500px;
+        background-position-y: -500px;
     }
 }
 
 body {
-    background: #321b1d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
     background-size: 15px !important;
     animation-name: bganim;
-    animation-duration: 60s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     background-attachment: fixed;
